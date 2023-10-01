@@ -1,0 +1,16 @@
+Technology/Techstacks -
+    - React -- as a declarative ui library
+    - Chakra ui -- as css library than give us built in components
+
+
+Vanilla js
+    const - 
+        we have to write imperative code
+        we have to directly mutate the ui
+        not same as SPA feels like an app
+        as our application grows mutation ui/dom manipulation becomes too complext
+
+Modern day framework and libraries - provide abstraction layer over dom manipulation
+    where ui is treated as a function(state)
+    - the data inside component is bounded to the markup when the data changes the new markup have been generated....
+
