@@ -3,6 +3,7 @@ import { Platform } from "./usePlatforms";
 import APIClient, { FetchResponse } from "../services/api-client";
 import ms from "ms";
 import useGameQueryStore from "../store";
+import { Genre } from "./useGenres";
 
 export interface Game {
   id: number;
@@ -11,6 +12,13 @@ export interface Game {
   metacritic: number;
   name: string;
   rating_top: number;
+  slug: string;
+  description_raw: string;
+  genres: Genre[];
+  publishers: {
+    id: number;
+    name: string;
+  }[];
 }
 
 const apiClient = new APIClient<Game>("/games");
