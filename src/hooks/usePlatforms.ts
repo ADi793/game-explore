@@ -13,6 +13,7 @@ const apiClient = new APIClient<Platform>("/platforms/lists/parents");
 
 const usePlatforms = () =>
   useQuery({
+    // @ts-ignore
     queryKey: ["platforms"],
     queryFn: apiClient.getAll,
     staleTime: ms("24h"),

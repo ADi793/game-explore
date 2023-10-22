@@ -13,6 +13,7 @@ const apiClient = new APIClient<Genre>("/genres");
 
 const useGenres = () =>
   useQuery({
+    // @ts-ignore
     queryKey: ["genres"],
     queryFn: apiClient.getAll,
     staleTime: ms("24h"),

@@ -31,7 +31,7 @@ function Homepage() {
           </GridItem>
         </Show>
         <GridItem area="main">
-          <Box paddingLeft={{ base: 3, lg: 0 }}>
+          <Box paddingLeft={{ md: 3, lg: 0 }}>
             <GameHeading />
             <HStack gap={5} marginBottom={7}>
               <PlatformSelector />
